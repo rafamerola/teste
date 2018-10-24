@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.mdevelopment.merola" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="br.com.mdevelopment.sose" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Camera">
         <param name="browser-package" value="Camera" />
     </feature>
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Merola</name>
+    <name>SOSe-Tcc</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
@@ -14,7 +14,16 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
+    <access origin="http://sose.juckmusic.com/includes/*" />
+    <access origin="http://sose.juckmusic.com/*" />
     <access origin="*" />
+    <allow-navigation href="http://localhost:8081/tcc/SOSe-Tcc/www/includes/*" />
+    <allow-navigation href="http://sose.juckmusic.com/*" />
+    <allow-navigation href="http://localhost:8081/*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
